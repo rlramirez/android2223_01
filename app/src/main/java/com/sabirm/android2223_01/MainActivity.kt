@@ -1,27 +1,46 @@
 package com.sabirm.android2223_01
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
+
+//import kotlinx.android.synthetic.main.activity_main.*
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        val btn_2=findViewById<Button>(R.id.btn2)
+        btn_2.setOnClickListener{
+            val saltar:Intent=Intent(this, Ventana2::class.java)
+            startActivity(saltar)
+        }
+        btn3.setOnClickListener{
+            val saltar2:Intent= Intent(this,VentanaFecha::class.java)
+            startActivity(saltar2)
+        }
 
-        
+        btn1.setOnClickListener(){
+            Toast.makeText(applicationContext, "Esto es un mensaje", Toast.LENGTH_SHORT).show()
+        }
+
         //variableContantes()
         //tiposDatos()
         //arrays()
         //maps()
-        clases()
+        //clases()
+        //txtview1.setOnClickListener()
     }
 
     fun variableContantes(){
         //creacion de variables
         /*
         seccion de comentarios multilinea
+
          */
         var saludo="Hola Mundo :)";
         saludo="Bienvenido Ramiro"
@@ -41,16 +60,16 @@ class MainActivity : AppCompatActivity() {
         val edad=18
         val edad2=3
         /*
-        * <, >, >=, >=, !=, ==
-        *
+        * <, >, >=, <=, !=, ==
+        * && !!
         * */
-        if (edad2<18){
+        if (edad<18){
             println("Ud es menor de edad")
         }else{
             println("Ud es mayor de edad")
         }
 
-        val pais="Argentina"
+        val pais="Peru"
         when(pais){
             "Peru","Ecuador","Colombia"->{
                 println("Hablan español")
@@ -85,7 +104,6 @@ class MainActivity : AppCompatActivity() {
         myArray.forEach {
             println(it)
         }
-
     }
     fun maps(){
         var myMap: Map<String,Int> = mapOf()

@@ -44,6 +44,10 @@ class MainActivity : AppCompatActivity() {
             var saltarGPS:Intent= Intent(this, SerevicioGPS::class.java)
             startActivity(saltarGPS)
         }
+        btn_firebase.setOnClickListener(){
+            var saltaFirebase:Intent=Intent(this, Auth_Ativity::class.java)
+            startActivity(saltaFirebase)
+        }
 
 
 

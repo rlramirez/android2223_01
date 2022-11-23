@@ -18,6 +18,12 @@
         android:theme="@style/Theme.Android2223_01"
         tools:targetApi="31">
         <activity
+            android:name=".LoginUser"
+            android:exported="false" />
+        <activity
+            android:name=".Auth_Ativity"
+            android:exported="false" />
+        <activity
             android:name=".SerevicioGPS"
             android:exported="false" />
         <activity

@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/rlramirez/AndroidStudioProjects/android2223_01/app/src/main/res/drawable/splashscreen.xml" value="0.117" />
+        <entry key="..\:/Users/rlramirez/AndroidStudioProjects/android2223_01/app/src/main/res/layout/activity_auth_ativity.xml" value="0.2078804347826087" />
+        <entry key="..\:/Users/rlramirez/AndroidStudioProjects/android2223_01/app/src/main/res/layout/activity_login_user.xml" value="0.5" />
         <entry key="..\:/Users/rlramirez/AndroidStudioProjects/android2223_01/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/rlramirez/AndroidStudioProjects/android2223_01/app/src/main/res/layout/activity_procesar.xml" value="0.33" />
         <entry key="..\:/Users/rlramirez/AndroidStudioProjects/android2223_01/app/src/main/res/layout/activity_serevicio_gps.xml" value="0.21467391304347827" />

@@ -3,18 +3,52 @@ package com.sabirm.android2223_01
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.widget.Button
 import android.widget.Toast
+import com.sabirm.android2223_01.databinding.ActivityMainBinding
 import kotlinx.android.synthetic.main.activity_main.*
+import java.util.*
+import java.util.concurrent.TimeUnit
+import kotlin.concurrent.schedule
+import kotlin.concurrent.scheduleAtFixedRate
+import kotlin.concurrent.timerTask
 
 //import kotlinx.android.synthetic.main.activity_main.*
 
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityMainBinding
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
+
+        Thread.sleep(3000)
+
+        setTheme(R.style.Theme_Android2223_01)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val btn_2=findViewById<Button>(R.id.btn2)
+
+        //var boton = findViewById<Button>(R.id.btn_ventana)
+        btn_ventana.setOnClickListener(){
+            var nombres:String=et_nombres2.text.toString()
+            var saltarVentana:Intent = Intent(this, VentanaMensaje::class.java)
+            saltarVentana.putExtra("Nombres", nombres)
+            //saltarVentana.putExtra("Edad", edad)
+            startActivity(saltarVentana)
+        //Toast.makeText(applicationContext, "Hola Mundo 2222", Toast.LENGTH_SHORT).show()
+        }
+        btnGPS.setOnClickListener(){
+            var saltarGPS:Intent= Intent(this, SerevicioGPS::class.java)
+            startActivity(saltarGPS)
+        }
+
+
+
+
+        /*val btn_2=findViewById<Button>(R.id.btn2)
         btn_2.setOnClickListener{
             val saltar:Intent=Intent(this, Ventana2::class.java)
             startActivity(saltar)
@@ -26,7 +60,7 @@ class MainActivity : AppCompatActivity() {
 
         btn1.setOnClickListener(){
             Toast.makeText(applicationContext, "Esto es un mensaje", Toast.LENGTH_SHORT).show()
-        }
+        }*/
 
         //variableContantes()
         //tiposDatos()
@@ -34,6 +68,11 @@ class MainActivity : AppCompatActivity() {
         //maps()
         //clases()
         //txtview1.setOnClickListener()
+    }
+
+    fun foo() {
+
+        println("Running")
     }
 
     fun variableContantes(){

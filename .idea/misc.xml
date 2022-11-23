@@ -3,10 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/rlramirez/AndroidStudioProjects/android2223_01/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/rlramirez/AndroidStudioProjects/android2223_01/app/src/main/res/drawable/splashscreen.xml" value="0.117" />
+        <entry key="..\:/Users/rlramirez/AndroidStudioProjects/android2223_01/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/rlramirez/AndroidStudioProjects/android2223_01/app/src/main/res/layout/activity_procesar.xml" value="0.33" />
+        <entry key="..\:/Users/rlramirez/AndroidStudioProjects/android2223_01/app/src/main/res/layout/activity_serevicio_gps.xml" value="0.21467391304347827" />
         <entry key="..\:/Users/rlramirez/AndroidStudioProjects/android2223_01/app/src/main/res/layout/activity_ventana2.xml" value="0.20516304347826086" />
         <entry key="..\:/Users/rlramirez/AndroidStudioProjects/android2223_01/app/src/main/res/layout/activity_ventana_fecha.xml" value="0.20923913043478262" />
+        <entry key="..\:/Users/rlramirez/AndroidStudioProjects/android2223_01/app/src/main/res/layout/activity_ventana_mensaje.xml" value="0.1766304347826087" />
         <entry key="..\:/Users/rlramirez/AndroidStudioProjects/android2223_01/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1075" />
       </map>
     </option>
